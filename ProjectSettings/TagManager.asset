@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - OneWayPlatform
+  - Player 1
+  - Player 2
   layers:
   - Default
   - TransparentFX

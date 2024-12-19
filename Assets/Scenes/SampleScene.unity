@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 457379262}
   m_Layer: 8
   m_Name: Player 2
-  m_TagString: Player
+  m_TagString: Player 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -702,7 +702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootingPoint: {fileID: 970547518}
   projectilePrefab: {fileID: 715605055836219352, guid: 1d0ca0e18a9a6f745bbba572ebeeff5f, type: 3}
-  shootCooldown: 0.5
+  shootCooldown: 0.25
 --- !u!4 &457379269
 Transform:
   m_ObjectHideFlags: 0
@@ -1330,7 +1330,7 @@ GameObject:
   - component: {fileID: 1174641068}
   m_Layer: 8
   m_Name: Player 1
-  m_TagString: Player
+  m_TagString: Player 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1586,6 +1586,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: ae41e2a0-a341-402e-9f3e-fcd718250392
     m_ActionName: 'Player 1/Meele[/Keyboard/c]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e601c3d2-8a37-4fb6-b25a-18cd4e934502
+    m_ActionName: 'Player 2/Shoot[/Keyboard/ctrl]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player 1
@@ -1625,7 +1629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootingPoint: {fileID: 42680810}
   projectilePrefab: {fileID: 715605055836219352, guid: 1d0ca0e18a9a6f745bbba572ebeeff5f, type: 3}
-  shootCooldown: 0.5
+  shootCooldown: 0.25
 --- !u!114 &1174641073
 MonoBehaviour:
   m_ObjectHideFlags: 0
