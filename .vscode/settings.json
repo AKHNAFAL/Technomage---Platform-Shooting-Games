@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Platform Engine Game.sln"
+    "dotnet.defaultSolution": "Technomage---Platform-Shooting-Games.sln"
 }
