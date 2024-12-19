@@ -114,6 +114,13 @@ public class PlayerController : MonoBehaviour
             currentOneWayPlatform = collision.gameObject;
             isKnockbacked = false; // Reset status isKnockbacked menjadi false
         }
+        // Abaikan tabrakan antara Player 1 dan Player 2
+        if ((gameObject.CompareTag("Player 1") && collision.gameObject.CompareTag("Player 2")) ||
+            (gameObject.CompareTag("Player 2") && collision.gameObject.CompareTag("Player 1")))
+        {
+            Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
+            return; // Hindari logika tambahan jika diperlukan
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
