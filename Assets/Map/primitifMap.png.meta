@@ -284,7 +284,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      primitifMap_0: 675645980689547777
+      primitifMap_1: -1649538580489616373
+      primitifMap_2: 7649510572663257721
+      primitifMap_3: 6889634315694410937
+      primitifMap_4: 2128907885500691307
+      primitifMap_5: -4503777875484515011
+      primitifMap_6: -4683471182806686620
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

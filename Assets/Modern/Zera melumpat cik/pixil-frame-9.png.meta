@@ -1,14 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: 6eb0a5ba6d0f07347b2159866a2e27d9
-=======
-guid: 9488b61ff2f479e4989509bc77589748
->>>>>>> Stashed changes
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -1008120270236328539
-    second: pixil-frame-9_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -70,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -92,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,20 +100,20 @@ TextureImporter:
       name: pixil-frame-9_0
       rect:
         serializedVersion: 2
-        x: 495
-        y: 527
-        width: 562
-        height: 658
+        x: 496
+        y: 528
+        width: 560
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5ad51b994ff6202f0800000000000000
-      internalID: -1008120270236328539
+      spriteID: f1f719cd11e44704cb1c280a01662fee
+      internalID: 1997376638
       vertices: []
       indices: 
       edges: []
@@ -129,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 41ac759c6a1ea89448503eea1859254b
     internalID: 0
     vertices: []
     indices: 
@@ -139,7 +132,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pixil-frame-9_0: -1008120270236328539
+      pixil-frame-9_0: 1997376638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
