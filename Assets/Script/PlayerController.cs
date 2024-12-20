@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
     // private bool isGrounded = false;
+    private Animator anim;
     private Vector2 moveInput;
     private bool doubleJump;
     private GameObject currentOneWayPlatform;
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>(); // Inisialisasi Animator
         originalGravityScale = rb.gravityScale;
         
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
@@ -42,6 +44,26 @@ public class PlayerController : MonoBehaviour
         if (!isKnockbacked)
         {
             rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
+
+            // Kontrol animasi berjalan
+            anim.SetBool("isWalking", moveInput.x != 0);
+        }
+
+        // Kontrol animasi melompat dan jatuh
+        if (!IsGrounded() && rb.linearVelocity.y > 0)
+        {
+            anim.SetBool("isJumping", true);
+            anim.SetBool("isFalling", false);
+        }
+        else if (!IsGrounded() && rb.linearVelocity.y < 0)
+        {
+            anim.SetBool("isJumping", false);
+            anim.SetBool("isFalling", true);
+        }
+        else
+        {
+            anim.SetBool("isJumping", false);
+            anim.SetBool("isFalling", false);
         }
 
         // Memanggil Flip jika arah gerakan berubah
@@ -58,6 +80,9 @@ public class PlayerController : MonoBehaviour
             {
                 isKnockbacked = false;
                 rb.gravityScale = originalGravityScale; // Kembalikan gravity scale ke normal
+                anim.SetBool("isWalking", false);
+                anim.SetBool("isJumping", false);
+                anim.SetBool("isFalling", false);
             }
         }
     }
@@ -66,7 +91,7 @@ public class PlayerController : MonoBehaviour
     {
         // Menyimpan input arah (A/D atau Panah Kiri/Kanan)
         moveInput = context.ReadValue<Vector2>();
-        
+
         // Jika sedang tidak dalam knockback, terapkan input ke pergerakan
         if (!isKnockbacked)
         {
@@ -110,6 +135,11 @@ public class PlayerController : MonoBehaviour
                     StartCoroutine(DisableCollision());
                 }
             }
+        }
+        if (!IsGrounded())
+        {
+            anim.SetBool("isJumping", false);
+            anim.SetBool("isFalling", true);
         }
     }
 

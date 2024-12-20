@@ -16,7 +16,9 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        // Abaikan objek dengan tag "OneWayPlatform"
+
+        //abaikan objek dengan tag "OneWayPlatform"
+
         if (collision.CompareTag("OneWayPlatform"))
         {
             return;
@@ -28,7 +30,7 @@ public class Projectile : MonoBehaviour
             Vector2 knockbackDirection = (collision.transform.position - transform.position).normalized;
             hitPlayer.TakeDamage(knockbackDirection, knockbackForce, 0.5f);
         }
-        
+
         Destroy(gameObject);
     }
 }

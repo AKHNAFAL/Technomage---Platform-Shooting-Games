@@ -1,17 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: 9baebd7acc7be8d4aa7d2558f1f36f9b
-=======
-guid: 7db7ee16508c8f840af051efeccee2c4
->>>>>>> Stashed changes
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -7138501363732420223
-    second: pixil-frame-3_0
-  - first:
-      213: -7453806314625018048
-    second: pixil-frame-3_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -73,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,42 +100,20 @@ TextureImporter:
       name: pixil-frame-3_0
       rect:
         serializedVersion: 2
-        x: 495
-        y: 527
-        width: 610
-        height: 658
+        x: 496
+        y: 528
+        width: 608
+        height: 656
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1896612c4d2feec90800000000000000
-      internalID: -7138501363732420223
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixil-frame-3_1
-      rect:
-        serializedVersion: 2
-        x: 1167
-        y: 783
-        width: 242
-        height: 194
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 047563816a2ce8890800000000000000
-      internalID: -7453806314625018048
+      spriteID: 88cbdf6f8ebf4e940af17a2175dfbb40
+      internalID: -617995401
       vertices: []
       indices: 
       edges: []
@@ -154,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 920aa448a88cada4b8341300230de1e3
     internalID: 0
     vertices: []
     indices: 
@@ -163,7 +131,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pixil-frame-3_0: -617995401
+      pixil-frame-3_1: -1093906665
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
