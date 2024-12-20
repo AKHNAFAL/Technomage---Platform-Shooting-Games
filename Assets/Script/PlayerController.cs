@@ -22,10 +22,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float groundCheckRadius = 0.2f;
     [SerializeField] private LayerMask groundLayer;
 
+    AudioManager audioManager;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         originalGravityScale = rb.gravityScale;
+        
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void Start()
@@ -84,6 +88,7 @@ public class PlayerController : MonoBehaviour
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
                 doubleJump = !doubleJump;
+                audioManager.PlaySFX(audioManager.jumpSound);
             }
         }
 
@@ -91,6 +96,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
         }
+        
     }
 
     public void OnCrouch(InputAction.CallbackContext context)

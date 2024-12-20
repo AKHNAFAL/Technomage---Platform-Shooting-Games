@@ -8,6 +8,8 @@ TagManager:
   - OneWayPlatform
   - Player 1
   - Player 2
+  - Audio
+  - Background
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - Platform
   - Projectile
   - Player
-  - 
+  - Background
   - 
   - 
   - 
